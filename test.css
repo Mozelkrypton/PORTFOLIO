@@ -1,0 +1,189 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020a47;
+    color: #8fc9eb;
+}
+
+/* Header Styles */
+#header {
+    width: 100%;
+    height: auto; /* Adjusted for flexibility */
+    min-height: 100vh; /* Ensures it covers full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0; /* Use padding instead of margin */
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+    border-radius: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #8fc9eb;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+/* Text Content */
+.text-content {
+    width: 40%;
+    font-size: 30px;
+}
+
+.text-content h1 {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+/* Image Content */
+.image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8fc9eb;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #0073b1; /* LinkedIn blue */
+}
+
+.social-links i {
+    margin-right: 8px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce spacing */
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        width: 100%; /* Full width */
+        font-size: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 40px;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+
+    .image-content img {
+        width: 70%;
+    }
+    .social-links {
+        margin-top: 20px;
+    }
+    
+    .social-links a {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #8fc9eb;
+        transition: 0.3s;
+    }
+    
+    .social-links a:hover {
+        color: #0073b1; /* LinkedIn blue */
+    }
+    
+    .social-links i {
+        margin-right: 8px;
+    }
+    .dark-mode {
+        background-color: #121212;
+        color: #f1f1f1;
+    }
+    
+    
+}
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
